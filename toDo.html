@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="it">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" />
+    <link rel="stylesheet" href="styleToDo.css">
+    <title>To Do List</title>
+</head>
+
+<body>
+
+    <!--PAGINA INIZIALE, SCHERMATA DI BENVENUTO-->
+    <div id="welcomePage">
+
+        <h1 class="welcomeTitle">
+            Benvenuto nella tua personale "To Do List"
+        </h1>
+
+        <p class="mindset">
+            <cite>
+                "Scegli oggi chi vuoi essere domani"
+            </cite>
+        </p>
+
+        <button id="start" onclick="passaAllaHomePage()">
+            Inizia
+        </button>
+
+        <div class="emoji">
+            <i class="fa-regular fa-face-smile-wink"></i>
+        </div>
+
+    </div>
+    <!-- FINE PAGINA INIZIALE, SCHERMATA DI BENVENUTO-->
+
+
+
+    <!--paginetta contenente la guida-->
+    <div id="guidePage" style="display: none;">
+
+        <div id="backToWelcomePage" onclick="tornaAllaWelcomePage()">
+            <button>&larr;</button>
+        </div>
+
+        <section>
+
+            <p style="text-align: center;">
+                Guida contenente le istruzioni per poter utilizzare al meglio l'applicazione
+            </p>
+
+        </section>
+
+    </div>
+
+    <!--HOME PAGE, STRUTTURA PORTANTE-->
+    <div id="homePage" style="display: none;">
+
+        <div class="add" onclick="addSections()">
+            <button>
+                <i class="fa-solid fa-plus"></i>
+            </button>
+        </div>
+
+        <h2>
+            Sei pronto per cominciare!
+        </h2>
+
+        <p>
+            Adesso non ti resta che creare le tue sezioni nelle quali andrai ad inserire i tuoi task. <br>
+            Aggiungi le tue sezioni cliccando "+" in alto a destra. <i class="fa-regular fa-face-smile-beam"></i>
+        </p>
+
+        <hr style="width: 55%;">
+
+        <!--container delle sezioni che verranno create-->
+        <div id="containerSezioni">
+
+            <h2 id="messaggio">
+                Nessuna sezione presente
+            </h2>
+
+        </div>
+
+        <div class="guide" onclick="guide()">
+            <img src="img/light_2vj2p436dkb1_32.png" alt="guida">
+        </div>
+
+        <!--modale alla quale si accede tenendo premuto su una sezione-->
+        <div>
+            <!--modale-->
+            <div id="modal" class="modal">
+                <div class="modal-content">
+                    <button onclick="chiudiModale()">&times;</button>
+                    <button onclick="modificaSezione()">Rinomina sezione</button>
+                    <button id="eliminaSection" onclick="eliminaSection()">Elimina sezione</button>
+                </div>
+            </div>
+        </div>
+        
+
+    </div>
+    <!-- FINE HOME PAGE, STRUTTURA PORTANTE-->
+
+
+    <div id="dettagliSezione">
+
+        <h1 id="titoloSezioneDettagli">Nome della sezione es. SHOPPING</h1>
+
+        <div id="bottoniSezioneDettagli">
+
+            <div id="backToHomePage" onclick="tornaAllaHomePage()">
+                <button>&larr;</button>
+            </div>
+
+            <button onclick="addTask()">    
+                + per aggiungere task
+            </button>
+        </div>
+
+        <!--sezioni (paragrafi) aggiunti dinamicamnete al click del +-->
+        <div id="tasksAggiunti">
+
+        </div>
+
+
+    </div>
+
+    <script src="toDoList.js"></script>
+</body>
+
+</html>

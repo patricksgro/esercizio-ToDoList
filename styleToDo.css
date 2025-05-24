@@ -1,0 +1,217 @@
+@media (max-width: 450px) {
+
+    body {
+        margin-left: 5%;
+        margin-right: 5%;
+    }
+
+    #start,
+    .emoji {
+        margin-top: 10%;
+    }
+
+    #start {
+        padding: 3%;
+        border-radius: 25px;
+        width: 25%;
+    }
+
+    #welcomePage {
+        margin-top: 25%;
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+
+    }
+
+    /* pagina homePage*/
+
+    .add {
+        text-align: end;
+    }
+
+    #homePage {
+        margin-top: 6%;
+    }
+
+    .section {
+        margin-top: 8%;
+        padding: 2%;
+        margin-left: 15%;
+        margin-right: 15%;
+        display: flex;
+        border: solid 2px black;
+    }
+
+    .imgWork {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .modal {
+        display: none;
+        /* nascosto inizialmente */
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100vw;
+        height: 100vh;
+        background-color: rgba(0, 0, 0, 0.5);
+        z-index: 1000;
+        
+        /* in primo piano */
+        justify-content: center;
+        align-items: center;
+    }
+
+    .modal-content {
+        background: white;
+        padding: 20px;
+        border-radius: 8px;
+        max-width: 400px;
+    }
+
+    .close {
+        float: right;
+        font-size: 24px;
+    }
+
+    .guide {
+        margin-top: 450px;
+        text-align: end;
+        margin-right: 25px;
+    }
+
+    /*adesso definirò lo stile per la sezione a cui si accede mediante click su una specifica sezione:*/
+
+    #dettagliSezione {
+        display: none;  
+    }
+
+    #titoloSezioneDettagli {
+        text-align: center;
+    }
+
+    #bottoniSezioneDettagli {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    #tasksAggiunti {
+        margin-top: 20px;
+    }
+}
+
+
+/*DESKTOP*/
+
+
+body {
+        margin-left: 5%;
+        margin-right: 5%;
+    }
+
+    #start,
+    .emoji {
+        margin-top: 10%;
+    }
+
+    #start {
+        padding: 3%;
+        border-radius: 25px;
+        width: 25%;
+    }
+
+    #welcomePage {
+        margin-top: 25%;
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+
+    }
+
+    /* pagina homePage*/
+
+    .add {
+        text-align: end;
+    }
+
+    #homePage {
+        margin-top: 6%;
+    }
+
+    #messaggio {
+        color: rgb(199, 199, 199);
+        text-align: center;
+    }
+
+    .section {
+        margin-top: 8%;
+        padding: 2%;
+        margin-left: 15%;
+        margin-right: 15%;
+        display: flex;
+        border: solid 2px black;
+    }
+
+    .imgWork {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .modal {
+        display: none;
+        /* nascosto inizialmente */
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100vw;
+        height: 100vh;
+        background-color: rgba(0, 0, 0, 0.5);
+        z-index: 1000;
+        
+        /* in primo piano */
+        justify-content: center;
+        align-items: center;
+    }
+
+    .modal-content {
+        background: white;
+        padding: 20px;
+        border-radius: 8px;
+        max-width: 400px;
+    }
+
+    .close {
+        float: right;
+        font-size: 24px;
+    }
+
+    /*adesso definirò lo stile per la sezione a cui si accede mediante click su una specifica sezione:*/
+
+    #dettagliSezione {
+        display: none;  
+    }
+
+    #titoloSezioneDettagli {
+        text-align: center;
+    }
+
+    #bottoniSezioneDettagli {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    #tasksAggiunti {
+        margin-top: 20px;
+    }
+
+
